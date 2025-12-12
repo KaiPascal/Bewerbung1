@@ -1,0 +1,144 @@
+/* Reset & Basis */
+* {
+  box-sizing: border-box;
+}
+
+body.dark {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121417;
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+  background: #1f2937;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.3rem 0.5rem;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #60a5fa;
+}
+
+/* Dropdown */
+nav ul li.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 2.3rem;
+  left: 0;
+  background: #1f2937;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  min-width: 160px;
+  z-index: 10;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #e0e0e0;
+  font-weight: normal;
+}
+
+.dropdown-menu li a:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  flex-grow: 1;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+/* Video Wrapper */
+.video-wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(37, 99, 235, 0.7);
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 405px;
+  border: none;
+  display: block;
+  background: black;
+}
+
+/* Footer */
+footer {
+  background: #1f2937;
+  padding: 1rem 0;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  user-select: none;
+}
